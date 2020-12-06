@@ -1,0 +1,176 @@
+@charset "UTF-8"; 
+
+/*Global*/
+
+* {
+	margin: 0; 
+	padding: 0; 
+}
+
+html { font-size: 100%; }
+
+body {
+	font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+	line-height: 1.7; 
+}
+
+.news-item a, 
+.news-contents time,
+.news-contents span,
+ a { 
+	display: block; 
+	text-size: 18px; 
+	color: black; 
+	text-decoration: none; 
+}
+
+
+a:hover,
+.navbar a:hover,
+.navbar-nav a:hover {
+	list-style-type: none; 
+	list-style: none !important; 
+	text-decoration: none; 
+	opacity: 0.5 !important; 
+	transition: 1.0s !important;
+}
+
+img { max-width: 100%; }
+
+.wrapper {
+	max-width: 1100px; 
+	margin: 0 auto; 
+}
+
+/*Header*/
+
+header .wrapper {
+	position: relative; 
+}
+
+.big-bg {
+	background-position: center; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	object-fit: cover; 
+}
+
+#home {
+	background-image: url('../images/main.png'); 
+	min-height: 75vh; 
+} 
+
+.header {
+	background-color: rgba(255,255,255,0); 
+}
+
+header .navbar {
+	font-size: 18px; 
+	background-color: rgba(255,255,255,0); 
+}
+
+header h2 {
+	position: absolute; 
+    left: 32%;
+    top: 36%;
+	font-size: 48px; 
+	white-space: nowrap; 
+	margin: 0 auto; 
+	text-align: center; 
+}
+	
+nav .navbar-nav {
+	text-align: center; 
+}
+
+/*NEWS*/
+
+.news-wrapper {
+	padding: 10% 15% 5% 15% !important; 
+	margin: 0 auto; 
+}
+
+.news-wrapper h3,
+.achieve-wrapper h3 { 
+	text-align: center; 
+	font-size: 38px;
+}
+
+.news-item {
+	margin: 0 auto; 
+	max-width: 700px; 
+	padding: 5% 5% 3% 0; 
+	border-bottom: 1px solid black; 
+}
+
+.news-item a { display: block; }
+
+/*Achieve*/
+
+.achieve-wrapper {
+	padding: 5% 10% 5% 10% !important; 
+	margin: 0 auto; 
+	text-align: center; 
+}
+
+.achieve-contents { 
+	margin-top: 8%; 
+	display: flex; 
+}
+
+.achieve-contents h3 { font-size: 24px; }
+
+.achieve-item  { 
+	text-align: center; 
+}
+
+
+
+
+
+/*news-itemのhoverが全体に効かない*/
+/*news-item折り返し方*/
+/*Navbarが折り返される・・・*/
+@media(max-width:786px) {
+	/*Header*/
+	header h2 {
+		left: 3%;
+		top: 47%;
+		font-size: 24px; 
+	}
+	
+	.big-bg {
+		background-size: cover !important; 
+	}
+	
+	#home {
+		background-image: url('../images/main.png'); 
+		min-height: 53vh; 
+	}
+	
+	/*NEWS*/
+	.news-wrapper {
+		padding: 10% 4% 8% 4% !important; 
+		margin: 0 auto; 
+}
+	.news-wrapper h3,
+	.achieve-wrapper h3
+	{ font-size: 24px;}
+	
+	/*achieve*/
+	
+	.achieve-wrapper {
+		padding: 5% 4% 10% 4% !important; 
+		margin: 0 auto; 
+}	
+	.achieve-contents { 
+		display: flex;
+		flex-wrap: wrap; 
+	}
+	
+	.achieve-item  { 
+		justify-content: column; 
+	}
+
+
+}
