@@ -124,6 +124,42 @@ nav .navbar-nav {
 	text-align: center; 
 }
 
+/*Menu*/
+
+.menu-wrapper {
+	margin: 8% 0 0 0; 
+}
+
+.menu-contents {
+	display: flex; 
+}
+
+/*Footer*/
+
+footer { color: #fff; }
+
+.footer-wrapper {
+	margin: 0 auto; 
+	background-color: #000; 
+}
+
+.footer-nav { 
+	margin: 0 auto; 
+	max-width: 1100px; 
+}
+
+
+.footer-nav img { 
+	width: 95px; 
+	height: 40px; 
+}
+
+.footer-nav ul {
+	display: flex; 
+	justify-content: space-between; 
+}
+
+
 
 
 
@@ -171,6 +207,22 @@ nav .navbar-nav {
 	.achieve-item  { 
 		justify-content: column; 
 	}
-
-
+	
+	/*Menu*/
+	
+	.menu-contents {
+		flex-direction: column; 
+	}
+	
+	/*Footer*/
+	
+	.footer-nav {
+		min-height: 360px; 
+	}
+	
+	.footer-nav ul {
+		flex-direction: column; 
+		justify-content: center; 
+	}
+	
 }
