@@ -161,15 +161,18 @@ footer { color: #fff; }
 
 
 
-
-
-
 /*news-itemのhoverが全体に効かない*/
 /*news-item折り返し方*/
 /*Navbarが折り返される・・・*/
+
+
+
+
+
 @media(max-width:786px) {
 	/*Header*/
 	header h2 {
+		display: none; 
 		left: 3%;
 		top: 47%;
 		font-size: 24px; 
