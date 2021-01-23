@@ -14,6 +14,11 @@ body {
 	line-height: 1.7; 
 }
 
+#wrap {
+	width: 100%; 
+}
+
+
 .news-item a, 
 .news-contents time,
 .news-contents span,
@@ -33,6 +38,7 @@ a:hover,
 	text-decoration: none; 
 	opacity: 0.5 !important; 
 	transition: 1.0s !important;
+	z-index: 10; 
 }
 
 img { max-width: 100%; }
@@ -162,11 +168,9 @@ footer { color: #fff; }
 
 
 
+/**hover前のaにdisplay:blockをしてhoverにz-index使ってhoverを全体に効かせる***/
 
-
-/*news-itemのhoverが全体に効かない*/
-/*news-item折り返し方*/
-/*Navbarが折り返される・・・*/
+/*achieve-item smallがipadの時はみでる?*/
 @media(max-width:786px) {
 	/*Header*/
 	header h2 {
@@ -185,6 +189,7 @@ footer { color: #fff; }
 	}
 	
 	/*NEWS*/
+	
 	.news-wrapper {
 		padding: 10% 4% 8% 4% !important; 
 		margin: 0 auto; 
@@ -226,3 +231,16 @@ footer { color: #fff; }
 	}
 	
 }
+
+@media(min-height: 1022px) and (max-height: 1368px) {
+	#home {
+		min-height: 41vh; 
+	}
+	
+	header h2 {
+		position: relative;
+		left: 3%;
+		top: 114px;
+	}
+}
+
