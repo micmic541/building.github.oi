@@ -174,8 +174,10 @@ footer { color: #fff; }
 
 /*achieve-item smallがipadの時はみでる?*/
 @media(max-width:767px) {
+
 	/*Header*/
 	header h2 {
+		display: none; 
 		left: 3%;
 		top: 47%;
 		font-size: 24px; 
