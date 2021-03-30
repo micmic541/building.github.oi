@@ -14,9 +14,7 @@ body {
 	line-height: 1.7; 
 }
 
-#wrap {
-	width: 100%; 
-}
+#wrap { width: 100%; overfow: hidden; }
 
 
 .news-item a, 
@@ -50,9 +48,7 @@ img { max-width: 100%; }
 
 /*Header*/
 
-header .wrapper {
-	position: relative; 
-}
+header .wrapper { position: relative; overflow-x: hidden; }
 
 .big-bg {
 	background-position: center; 
@@ -71,6 +67,9 @@ header .wrapper {
 }
 
 header .navbar {
+	position: absolute; 
+	width: 100%; 
+	left: 0; 
 	font-size: 18px; 
 	background-color: rgba(255,255,255,0); 
 }
@@ -88,6 +87,8 @@ header h2 {
 nav .navbar-nav {
 	text-align: center; 
 }
+
+nav .navbar-brand { width: 150px; }
 
 /*NEWS*/
 
@@ -152,6 +153,7 @@ footer { color: #fff; }
 .footer-nav { 
 	margin: 0 auto; 
 	max-width: 1100px; 
+	min-height: 10vh; 
 }
 
 
@@ -171,7 +173,7 @@ footer { color: #fff; }
 /**hover前のaにdisplay:blockをしてhoverにz-index使ってhoverを全体に効かせる***/
 
 /*achieve-item smallがipadの時はみでる?*/
-@media(max-width:786px) {
+@media(max-width:767px) {
 	/*Header*/
 	header h2 {
 		left: 3%;
@@ -226,6 +228,8 @@ footer { color: #fff; }
 	}
 	
 	.footer-nav ul {
+		position: relative; 
+		top: 20px; 
 		flex-direction: column; 
 		justify-content: center; 
 	}
@@ -233,14 +237,10 @@ footer { color: #fff; }
 }
 
 @media(min-height: 1022px) and (max-height: 1368px) {
-	#home {
-		min-height: 41vh; 
-	}
+	#wrap { overflow: hidden !important; }
 	
-	header h2 {
-		position: relative;
-		left: 3%;
-		top: 114px;
-	}
+	#home { min-height: 41vh; }
+	
+	header h2 { position: relative; left: 3%; top: 268px; }
 }
 
