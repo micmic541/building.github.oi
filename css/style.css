@@ -1,5 +1,7 @@
 @charset "UTF-8"; 
 
+/***修正済2021-03-31***/
+
 /*Global*/
 
 * { margin: 0; padding: 0; }
@@ -77,10 +79,7 @@ nav .navbar-brand { width: 150px; }
 
 /*NEWS*/
 
-.news-wrapper {
-	padding: 10% 15% 5% 15% !important; 
-	margin: 0 auto; 
-}
+.news-wrapper { padding: 10% 15% 5% 15% !important; margin: 0 auto; }
 
 .news-wrapper h3,
 .achieve-wrapper h3 { text-align: center; font-size: 38px; }
